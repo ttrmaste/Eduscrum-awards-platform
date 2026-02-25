@@ -1,0 +1,16 @@
+/* Animações básicas do Tailwind (fix temporário do shadcn) */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Exemplo de keyframes que o shadcn espera */
+@layer utilities {
+  @keyframes enter {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  @keyframes exit {
+    from { opacity: 1; transform: scale(1); }
+    to { opacity: 0; transform: scale(0.95); }
+  }
+}
